@@ -7,9 +7,11 @@ Rails.application.routes.draw do
   get :logged_in, to: "sessions#logged_in"
 
   post :reps, to: "workouts#create"
-  
+
   post :meditationsBefore, to: "meditations#createBefore"
   post :meditationsAfter, to: "meditations#updateAfter"
+
+  post :journal, to: "journals#create"
 
   
 end
