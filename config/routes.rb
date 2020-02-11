@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   post :reps, to: "workouts#create"
   
+  post :meditationsBefore, to: "meditations#createBefore"
+  post :meditationsAfter, to: "meditations#updateAfter"
+
+  
 end
