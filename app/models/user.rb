@@ -5,4 +5,6 @@ class User < ApplicationRecord
   validates_uniqueness_of :email 
   
   has_many :workouts, dependent: :destroy
+  has_many :meditations, dependent: :destroy
+
 end
