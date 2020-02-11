@@ -17,6 +17,6 @@ class MeditationsController < ApplicationController
   private 
  
   def meditation_params 
-    params.require(:user).permit(:user_id, :before, :after)
+    params.require(:user).permit(:user_id, :before, :after, :time)
   end
 end
