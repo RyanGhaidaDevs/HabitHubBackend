@@ -8,10 +8,11 @@ Rails.application.routes.draw do
 
   post :reps, to: "workouts#create"
 
-  post :meditationsBefore, to: "meditations#createBefore"
-  post :meditationsAfter, to: "meditations#updateAfter"
+  post :meditationBefore, to: "meditations#createBefore"
+  post :meditationAfter, to: "meditations#updateAfter"
 
   post :journal, to: "journals#create"
+  post :shower, to: "showers#create"
 
   
 end

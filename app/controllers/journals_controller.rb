@@ -1,4 +1,6 @@
 class JournalsController < ApplicationController
+  include CurrentUserConcern
+
   def create
     params = journal_params
     @journal = Journal.create(params)

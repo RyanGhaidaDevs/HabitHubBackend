@@ -1,9 +1,9 @@
-class ColdShowersController < ApplicationController
+class ShowersController < ApplicationController
   include CurrentUserConcern
 
   def create
     params = shower_params
-    @coldShower = ColdShower.create(params)
+    @coldShower = Shower.create(params)
     render json: {coldShower: @coldShower}
   end 
   
