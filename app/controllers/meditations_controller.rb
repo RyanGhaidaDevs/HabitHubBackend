@@ -1,16 +1,9 @@
 class MeditationsController < ApplicationController
   include CurrentUserConcern
 
-  def createBefore
+  def create
     params = meditation_params
     @meditation = Meditation.create(params)
-    render json: {meditation: @meditation}
-  end 
-
-  def updateAfter
-    params = meditation_params
-    # @meditation = Meditation.find(params)
-    # @meditation = Meditation.update(params)
     render json: {meditation: @meditation}
   end 
 
